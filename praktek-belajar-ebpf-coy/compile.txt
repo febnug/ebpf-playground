@@ -1,0 +1,2 @@
+clang -O2 -g -target bpf -c execsnoop.bpf.c -o execsnoop.bpf.o
+gcc -Wall -O2 -o execsnoop execsnoop.c -lbpf -lelf -lz
